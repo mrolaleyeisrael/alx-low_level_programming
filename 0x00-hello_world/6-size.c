@@ -2,7 +2,7 @@
 int main(void)
 {
 	int a;
-	lont int b;
+	long int b;
 	long long int c;
 	char d;
 	float f;
