@@ -1,5 +1,5 @@
-#include <stdio.h>
-int main() {
+#include "main.h"
+void alphabet(void) {
     char c;
     for (c = 'a'; c <= 'z'; ++c)
         printf("%c ", c);
