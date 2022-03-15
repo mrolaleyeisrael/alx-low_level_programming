@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - Entry block
  * Description: prints  on new line
@@ -10,7 +11,7 @@ int main(void)
 
 	int i = 0;
 
-	while (i < 9)
+	while (i < 10)
 	{
 		_putchar(c[i]);
 		i++;
