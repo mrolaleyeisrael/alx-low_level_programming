@@ -2,7 +2,7 @@
 #define MAIN_H
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
-int_strlen(char *s);
+void int_strlen(char *s);
 
 
 
