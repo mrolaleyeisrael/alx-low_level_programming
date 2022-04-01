@@ -1,13 +1,13 @@
 #include "main.h"
-
 /**
- * _islower - checks for lowercase
- * @c: c is an ascii character
- *
- * Return: 1 if lowercase
+ * _islower - function that checks for lowercase character
+ * baccrie © 2022 all right reserved
+ * @c: The int to use
+ * Return: 1 on success(lowercase) otherwise 0
  */
 
 int _islower(int c)
+
 {
 	if (c >= 'a' && c <= 'z')
 	{
@@ -17,4 +17,5 @@ int _islower(int c)
 	{
 		return (0);
 	}
+	/* Copyright 2022 © baccrie */
 }

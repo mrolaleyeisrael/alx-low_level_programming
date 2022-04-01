@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for alphabetic character
- * @c: c is an ascii character
- *
- * Return: 1 (if letter)
+ * _isalpha - checks for alphabetic
+ * character
+ * @c: the integer to use in the func
+ * Copyright 2022 © baccrie
+ * Return: 1 (if letter) else return 0
  */
 
 int _isalpha(int c)
@@ -21,4 +22,5 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
+	/* Copyright 2022 © baccrie */
 }
