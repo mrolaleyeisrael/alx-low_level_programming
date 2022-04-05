@@ -1,29 +1,34 @@
 #include "main.h"
 
 /**
- * isSqrt - helper function for _sqrt_recursion
- * @n: input number
- * @i: iteratotr
- * Return: square root of number
+ * power_operation - returns the natural square root of a number.
+ * @n: input number.
+ * @c: iterator.
+ * Return: square root or -1.
  */
-
-int isSqrt(int n, int i)
+int power_operation(int n, int c)
 {
-	if (i * i > n)
-		return (-1);
-	if (i * i == n)
-		return (i);
-	return (isSqrt(n, i + 1));
+	if (c % (n / c) == 0)
+	{
+		if (c * (n / c) == n)
+			return (c);
+		else
+			return (-1);
+	}
+	return (0 + power_operation(n, c + 1));
 }
-
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: input number
- * Return: square root of number, -1 if false
+ * _sqrt_recursion - returns the natural square root of a number.
+ * @n: input number.
+ * Return: natural square root.
  */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (isSqrt(n, 1));
+	if (n == 0)
+		return (0);
+	if (n == 1)
+		return (1);
+	return (power_operation(n, 2));
 }
