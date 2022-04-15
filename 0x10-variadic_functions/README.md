@@ -1,2 +1,2 @@
-0x10. C - Variadic functions
-
+## 
+All files are written in c
