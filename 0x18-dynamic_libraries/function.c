@@ -1,66 +1,46 @@
 #include "main.h"
+
 /**
- * op_add - adds two integers
- * @a: first integer
- * @b: second integer
- * Return: sum of two integers
+ * add - addition operator
+ * @a: first int
+ * @b: second int
+ * Return: sum of 2 numbers
  */
-int op_add(int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }
 
-
 /**
- * op_sub - subtracts two integers
- * @a: first integer
- * @b: second integer
- * Return: difference of two integers
+ * sub - subtraction operator
+ * @a: first in
+ * @b: second int
+ * Return: difference of 2 numbers
  */
-int op_sub(int a, int b)
+int sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * op_mul - multiply two integers
- * @a: first integer
- * @b: second integer
- * Return: product of two integers
+ * mul - product of 2 numbers
+ * @a: first int
+ * @b: second int
+ * Return: product of the numbers
  */
-int op_mul(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * op_div - divides two integers
- * @a: first integer
- * @b: second integer
- * Return: quotient of two integers
+ * div - division of 2 numbers
+ * @a: first int
+ * @b: second int
+ * Return: remainder of division of the numbers
  */
-int op_div(int a, int b)
+int mod(int a, int b)
 {
-	if (!b)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	return (a / b);
+	return(a % b);
 }
 
-/**
- * op_mod - calculates modulus two integers
- * @a: first integer
- * @b: second integer
- * Return: modulus of two integers
- */
-int op_mod(int a, int b)
-{
-	if (!b)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	return (a % b);
-}
